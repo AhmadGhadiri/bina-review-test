@@ -1,5 +1,7 @@
 
-def mutable_default(l=[]):
+def mutable_default(l=None):
+    if l is None:
+        l = []
     l.append(1)
     return l
 
@@ -10,8 +12,12 @@ def silent_exception():
         pass
 
 def infinite_loop():
+    count = 0
     while True:
         print("forever")
+        count += 1
+        if count > 5:
+            break
 
 def none_deref():
     x = None
