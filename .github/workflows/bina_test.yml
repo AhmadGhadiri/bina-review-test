@@ -2,6 +2,10 @@ name: Test Bina Review
 
 on: [push, pull_request]
 
+permissions:
+  contents: read
+  pull-requests: write # This allows Bina to post comments
+
 jobs:
   bina-analysis:
     runs-on: ubuntu-latest
