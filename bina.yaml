@@ -1,0 +1,5 @@
+profiles:
+  custom-demo:
+    - style
+    - maintainability
+profile: custom-demo
