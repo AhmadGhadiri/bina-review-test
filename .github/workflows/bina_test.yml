@@ -2,6 +2,10 @@ name: Test Bina Review
 
 on: [push, pull_request]
 
+permissions:
+  contents: read
+  pull-requests: write
+
 jobs:
   bina-analysis:
     runs-on: ubuntu-latest
@@ -13,4 +17,4 @@ jobs:
         uses: AhmadGhadiri/bina-review@main
         with:
           path: .
-          fail_on_high: false # Set to false so we can see all errors without failing the build immediately
+          fail_on_high: true # Set to false so we can see all errors without failing the build immediately
