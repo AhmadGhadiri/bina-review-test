@@ -1,0 +1,3 @@
+output:
+  sarif: true
+  sarif_path: bina-results.sarif
