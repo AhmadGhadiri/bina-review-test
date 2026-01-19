@@ -21,7 +21,7 @@ jobs:
           fail_on_high: true # Set to false so we can see all errors without failing the build immediately
 
       - name: Upload SARIF report
-        uses: github/codeql-action/upload-sarif@v2
+        uses: github/codeql-action/upload-sarif@v4
         with:
           sarif_file: bina-results.sarif
         if: always()
