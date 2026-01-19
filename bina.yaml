@@ -1,0 +1,5 @@
+rules:
+  B001: OFF
+  L001: HIGH
+exclude:
+  - "ignored_file.py"
